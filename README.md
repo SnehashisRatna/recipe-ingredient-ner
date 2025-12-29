@@ -84,7 +84,7 @@ The trained NER model is served via a Flask REST API.
     }
   ]
 }
-
+```
   ---
 ## Web Interface 
 
