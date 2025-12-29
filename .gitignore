@@ -1,4 +1,14 @@
-__pycache__/ 
-*.pyc 
-.env 
-model/ 
+# Virtual environments
+venv/
+.venv/
+pyvenv.cfg
+
+# Python cache
+__pycache__/
+*.pyc
+
+# spaCy model artifacts
+model/
+
+# Environment variables
+.env
