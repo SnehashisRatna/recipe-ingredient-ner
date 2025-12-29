@@ -66,7 +66,7 @@ The trained NER model is served via a Flask REST API.
 {
   "recipe_text": "Add 2 cups of rice and 1 tablespoon sugar"
 }
-
+```
 ###  Response Example
 
 ```{
@@ -92,9 +92,9 @@ A lightweight web interface is provided to:
 
 - Enter recipe text
 
--View extracted entities
+- View extracted entities
 
--Display results in a table format
+- Display results in a table format
 
 This makes the project easier to demonstrate and test without external tools.
 
@@ -104,11 +104,11 @@ This system uses Named Entity Recognition (NER), which predicts entities indepen
 
 As a result:
 
--In some cases, a UNIT may not be perfectly associated with its INGREDIENT
+- In some cases, a UNIT may not be perfectly associated with its INGREDIENT
 
--Errors may occur in medium or complex sentences
+- Errors may occur in medium or complex sentences
 
--This behavior is expected in NER-based systems
+- This behavior is expected in NER-based systems
 
 ---
 
@@ -126,8 +126,8 @@ As a result:
    python api/app.py
 4. Test the API using PowerShell, CMD, or Postman
 5. Access the application
-   -API Endpoint: http://127.0.0.1:5000/extract
-   -Web UI: http://127.0.0.1:5000/
+   - API Endpoint: http://127.0.0.1:5000/extract
+   - Web UI: http://127.0.0.1:5000/
 
   ---
 
@@ -140,28 +140,28 @@ As a result:
    ```bash
    docker run -p 5000:5000 recipe-ingredient-ner
 3. Access the application
-   -API Endpoint: http://127.0.0.1:5000/extract
-   -Web UI: http://127.0.0.1:5000/
+   - API Endpoint: http://127.0.0.1:5000/extract
+   - Web UI: http://127.0.0.1:5000/
 
  ---
 
 ## Learning Outcomes
 
--Through this project, I gained hands-on experience with:
+- Through this project, I gained hands-on experience with:
 
--Creating and annotating NLP datasets
+- Creating and annotating NLP datasets
 
--Training custom spaCy NER models
+- Training custom spaCy NER models
 
--Converting datasets to DocBin format
+- Converting datasets to DocBin format
 
--Building REST APIs using Flask
+- Building REST APIs using Flask
 
--Debugging real-world NLP behavior
+- Debugging real-world NLP behavior
 
--Understanding limitations of NER models
+- Understanding limitations of NER models
 
--Containerizing ML applications using Docker
+- Containerizing ML applications using Docker
 
 ## Conclusion
 
