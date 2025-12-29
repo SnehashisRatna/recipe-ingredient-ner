@@ -1,9 +1,13 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, render_template
 from ner_inference import RecipeNER
 from utils import validate_input
 
 app = Flask(__name__)
 ner = RecipeNER()
+
+@app.route("/", methods=["GET"])
+def home():
+    return render_template("index.html")
 
 @app.route("/extract", methods=["POST"])
 def extract():
