@@ -1,0 +1,5 @@
+flask
+spacy
+srsly
+thinc
+numpy
